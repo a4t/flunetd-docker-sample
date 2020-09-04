@@ -14,5 +14,6 @@ $ tail -f data/logs/sensor.log
 fluentdがファイルのデータを読み込んでJSON型に書き換えながらOutputをするのを確認する
 
 ```
+$ chmod -R 777 ./data
 $ docker run --rm -v $(pwd):/flunetd-docker-sample -v $(pwd)/fluent.conf:/fluentd/etc/fluent.conf fluent/fluentd:v1.11.2-1.0
 ```
